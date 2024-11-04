@@ -1,0 +1,81 @@
+// src/styles/globals.css
+
+/* Import the fonts from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&family=Chakra+Petch:wght@300;400;500;600;700&family=Orbitron:wght@400;500;600;700;800;900&family=Quantico:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+/* Define custom properties for the font families */
+:root {
+  --font-heading: 'Orbitron', sans-serif;
+  --font-subheading: 'Russo One', sans-serif;
+  --font-body: 'Chakra Petch', sans-serif;
+  --font-accent: 'Quantico', sans-serif;
+}
+
+/* Base styles */
+body {
+  font-family: var(--font-body);
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  line-height: 1.6;
+}
+
+/* Heading styles */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  line-height: 1.2;
+}
+
+/* Specific heading styles */
+h1 {
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+
+/* Subheadings and special text */
+.subheading, 
+.special-text {
+  font-family: var(--font-subheading);
+  letter-spacing: 0.03em;
+}
+
+/* Accent text (for buttons, labels, etc.) */
+.accent-text,
+button,
+.label {
+  font-family: var(--font-accent);
+  letter-spacing: 0.02em;
+  font-weight: 700;
+}
+
+/* Helper classes for different font weights */
+.font-light { font-weight: 300; }
+.font-normal { font-weight: 400; }
+.font-medium { font-weight: 500; }
+.font-semibold { font-weight: 600; }
+.font-bold { font-weight: 700; }
+.font-extrabold { font-weight: 800; }
+.font-black { font-weight: 900; }
+
+/* Optional: Add some custom utility classes */
+.text-gaming {
+  font-family: var(--font-heading);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.text-cyber {
+  font-family: var(--font-subheading);
+  letter-spacing: 0.03em;
+}
+
+.text-tech {
+  font-family: var(--font-accent);
+  letter-spacing: 0.02em;
+}
